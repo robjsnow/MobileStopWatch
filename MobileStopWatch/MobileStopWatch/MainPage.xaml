@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileStopWatch.MainPage"
+             Padding="0,45,0,45"
+             BackgroundColor="Black">
+
+    <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="DarkGray" Padding="24" CornerRadius="0">
+            <Label Text="Mobile Stop Watch" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label HorizontalTextAlignment="Center" x:Name="lblStopWatchTime" TextColor="DimGray" FontSize="49"></Label>
+        <StackLayout Orientation="Horizontal"  VerticalOptions="EndAndExpand" >
+            <Button Text="Start" CornerRadius="10" Clicked="Button_Start" HorizontalOptions="Start"/>
+            <Button Text="Stop" CornerRadius="10" Clicked="Button_Stop"  HorizontalOptions="CenterAndExpand" />
+            <Button Text="Reset" CornerRadius="10" Clicked="Button_Reset" HorizontalOptions="End"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
